@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Virtual Assistant Services">
+    <meta name="keywords" content="Virtual Assistant, Administrative Services, Business Support, Online Help">
+    <title>Virtual Assistant Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>/* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
+        }
+        
+        header {
+            background: linear-gradient(90deg, #007BFF, #00BFFF);
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        header .logo h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        header .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        header .nav-links li {
+            display: inline;
+        }
+        
+        header .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        
+        header .nav-links a:hover {
+            color: #FFD700;
+            text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+        }
+        
+        /* Hero Section */
+        #hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 2rem;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        #hero .hero-text {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+        
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #FFD700;
+        }
+        
+        #hero .btn {
+            background: #FFD700;
+            color: #007BFF;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        
+        #hero .btn:hover {
+            background: #FFA500;
+            transform: scale(1.1);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            background: #f9f9f9;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        section:nth-child(even) {
+            background: #e2e8f0;
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #007BFF;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        section p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Services Section */
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        
+        .service-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #007BFF;
+        }
+        
+        /* Pricing Section */
+        .pricing-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        
+        .pricing-item {
+            background: linear-gradient(135deg, #007BFF, #00BFFF);
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .pricing-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pricing-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Contact Section */
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        form button {
+            background: linear-gradient(90deg, #007BFF, #00BFFF);
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        
+        form button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            border-top: 4px solid #007BFF;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+         </style>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Virtual Assistant Services</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Your Professional Virtual Assistant</h2>
+            <p>Helping you save time and grow your business</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated virtual assistant with extensive experience in administrative tasks, social media management, and customer support. My goal is to help you focus on what really matters while I take care of the details.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Administrative Support</h3>
+                <p>Email management, scheduling, data entry, and more.</p>
+            </div>
+            <div class="service-item">
+                <h3>Social Media Management</h3>
+                <p>Content creation, scheduling, and audience engagement.</p>
+            </div>
+            <div class="service-item">
+                <h3>Customer Support</h3>
+                <p>Managing customer inquiries, handling support tickets, and communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-list">
+            <div class="pricing-item">
+                <h3>Basic Package</h3>
+                <p>$15/hour - General admin tasks, up to 10 hours per week.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Pro Package</h3>
+                <p>$25/hour - Social media management and customer support, up to 20 hours per week.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Premium Package</h3>
+                <p>$40/hour - Full support, including project management, up to 40 hours per week.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Virtual Assistant Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
